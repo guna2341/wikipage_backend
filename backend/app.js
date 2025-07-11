@@ -5,12 +5,7 @@ const cors = require('cors');
 const path = require('path');
 const port = process.env.PORT || 3001;
 const api = "wikipage";
-const { loginModel } = require("./config/loginModel");
-// async function d() {
-//   const data = await loginModel.find(['a', 'b']);
-//   console.log(data);
-// }
-// d();
+
 
 // imports
 const auth = require('./routes/authRoutes/authRoutes');

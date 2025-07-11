@@ -9,6 +9,7 @@ const { regulation } = require("../../controllers/admin/regulation");
 // middlewares
 router.use(verifyToken, authorizeRole("admin","faculty","student"));
 
+// controllers
 router.post("/regulation", regulation);
 
 router.use("/", (req, res) => {
